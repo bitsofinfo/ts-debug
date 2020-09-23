@@ -107,8 +107,7 @@ https://discord.com/channels/508357248330760243/746390817228456068/7583488283312
 Add to `tsconfig.json`:
 ```
 ...
-"typeRoots": [ "./types", "./node_modules/@types"],
-"exclude": ["node_modules", "types" ]
+"typeRoots": [ "./types", "./node_modules/@types"]
 ...
 ```
 
