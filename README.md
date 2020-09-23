@@ -1,5 +1,7 @@
 # swagger-client typescript issue 1
 
+https://github.com/swagger-api/swagger-js/issues/1730
+
 ```
 node -v
 v12.18.4
