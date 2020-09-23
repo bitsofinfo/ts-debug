@@ -98,3 +98,27 @@ executing response interceptor
   }
 }
 ```
+
+
+# The solution:
+
+https://discord.com/channels/508357248330760243/746390817228456068/758348828331212860
+
+Add to `tsconfig.json`:
+```
+...
+"typeRoots": [ "./types", "./node_modules/@types"],
+"exclude": ["node_modules", "types" ]
+...
+```
+
+Declare a module for `swagger-client`
+```
+mkdir types/swagger-client
+echo "declare module 'swagger-client';" > types/swagger-client/index.d.ts
+```
+
+Run tsc w/ `--esModuleInterop`:
+```
+npx tsc --esModuleInterop
+```
